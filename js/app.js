@@ -34,11 +34,13 @@ function render() {
 function updateBoard() {
   board.forEach(function (box, index) {
     if (box === -1) {
-      tilesEl[index].textContent = "⚫"
+      tilesEl[index].innerHTML = '<img id="jinx" src="../Images/Jinx.png">'
+      tilesEl[index].classList.add('fall')
       return
     }
     if (box === 1) {
-      tilesEl[index].textContent = "🔴"
+      tilesEl[index].innerHTML = '<img id="vi" src="../Images/arcane-vi.png">'
+      tilesEl[index].classList.add('fall')
       return
     }
     if (box === null) {
@@ -50,7 +52,7 @@ function updateBoard() {
 
 function updateMessage() {
   if (!winner && !tie) {
-  messageEl.textContent = `It's ${turn === 1 ? '🔴' : '⚫'}'s turn!`
+  messageEl.innerHTML = `It's ${turn === 1 ? '<img id="vi" src="../Images/arcane-vi.png">' : '<img id="jinx" src="../Images/Jinx.png">'}'s turn!`
   } else if (!winner && tie) {
     messageEl.textContent = `It's a tie!`
   } else {
