@@ -54,13 +54,13 @@ function updateMessage() {
   } else if (!winner && tie) {
     messageEl.textContent = `It's a tie!`
   } else {
-    messageEl.textContent = `${turn === -1 ? '🔴' : '⚫'} wins!!`
+    messageEl.textContent = `${turn === -1 ? '⚫' : '🔴'} wins!!`
   }
 }
 
 function handleClick(evt) {
   const intIdx = parseInt(evt.target.id.replace('l', ''))
-  if (board[intIdx || winner]) return
+  if (board[intIdx] || winner) return
   //creates a variable to match the spaces in the board. 35 indexes between 0 and 35.
   let gravity = 35
   // places the piece at the bottom so long as it is not taken. 
