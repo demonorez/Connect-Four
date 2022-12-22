@@ -13,12 +13,10 @@ const resetBtnEl = document.querySelector('#reset')
 
 /*----------------------------- Event Listeners -----------------------------*/
 tilesEl.forEach(tile => tile.addEventListener('click', handleClick))
-resetBtnEl.addEventListener('click', () => {
-  console.log('clicked reset');
-})
+resetBtnEl.addEventListener('click', init)
 /*-------------------------------- Functions --------------------------------*/
 
-function init () {
+function init() {
   board = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
   turn = 1
   winner = false
@@ -62,8 +60,7 @@ function updateMessage() {
 
 function handleClick(evt) {
   const intIdx = parseInt(evt.target.id.replace('l', ''))
-  if (board[intIdx || winner]) 
-  return
+  if (board[intIdx || winner]) return
   //creates a variable to match the spaces in the board. 35 indexes between 0 and 35.
   let gravity = 35
   // places the piece at the bottom so long as it is not taken. 
@@ -72,11 +69,26 @@ function handleClick(evt) {
   }
   board[intIdx + gravity] = turn
   render()
+  checkForTie()
+  checkForWinner()
+  switchPlayerTurn()
+  updateMessage()
   console.log(intIdx);
 }
 
 function checkForTie() {
-  if (board.includes(null)) 
-  return tie = true
+  if (board.includes(null)) return 
+  tie = true
 }
 
+function checkForWinner() {
+  winningCombos.forEach(combo => {
+    if (Math.abs(board[combo[0]] + board[combo[1]] + board[combo[2]] + board[combo[3]]) === 4) {
+      winner = true
+    }
+  })
+}
+
+function switchPlayerTurn() {
+  if (!winner) turn *= -1
+}
