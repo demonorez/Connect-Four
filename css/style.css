@@ -1,35 +1,42 @@
 body {
   background-color: rgb(146, 83, 83);
 /* Use a system font, if none are available use an available sans-sarif   font */
-font-family: 'Creepster', cursive;
-margin: 0;
-height: 100vh;
-display: flex;
-flex-direction: column;
+  font-family: 'Creepster', cursive;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section.board {
-height: 100%;
-width: 100%;
-height: 580px;
-width: 675px;
-background-color: rgb(9, 9, 143);
-display: grid;
-grid-template-rows: repeat(6, 10vmin);
-grid-template-columns: repeat(7, 10vmin);
-grid-gap: 0vmin;
+.board {
+  /* height: 100%;
+  width: 100%; */
+  height: 570px;
+  width: 675px;
+  
+  background-color: rgb(9, 9, 143);
+  display: grid;
+  grid-template-rows: repeat(6, 10vmin);
+  grid-template-columns: repeat(7, 10vmin); 
+  justify-content: center;
+  margin: auto;
 }
 
-div {
-border: 3px solid rgb(10, 3, 3);
-font-size: 8vmin;
-text-align: center;
-/* vertical-align: middle; */
-}
+/* div {
+  border: 3px solid rgb(10, 3, 3);
+  text-align: center;
+
+} */
 
 .tile {
-font-size: 70px;
-padding: 0 0 10px 0;
+  background-color: white;
+  font-size: 85px;;
+  /* margin: 5px; */
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: space-evenly
 }
 
 #reset {
