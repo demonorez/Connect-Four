@@ -58,7 +58,7 @@ function updateMessage() {
   }
 }
 
-function handleClick(evt) {
+function handleClick(evt) { 
   const intIdx = parseInt(evt.target.id.replace('l', ''))
   if (board[intIdx] || winner) return
   //creates a variable to match the spaces in the board. 35 indexes between 0 and 35.
