@@ -27,8 +27,8 @@ h2 {
   justify-content: center;
   height: 570px;
   width: 700px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /* border-top-left-radius: 20px; */
+  /* border-top-right-radius: 20px; */
   padding-top: 10px;
 }
 
@@ -59,7 +59,13 @@ div {
 
 .tile {
   background-color: white;
+  height: 63px;
+  width: 65px; */
+  font-size: 84px;
   border-radius: 50%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: center;
 }
 
@@ -77,11 +83,11 @@ div {
 }
 
 #vi {
-  height: 130px;
-  width: 200px;
+  height: 115px;
+  width: 115px;
 }
 
 #jinx {
-  height: 130px;
-  width: 200px;
+  height: 90px;
+  width: ;
 }

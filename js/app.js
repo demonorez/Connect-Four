@@ -39,7 +39,7 @@ function updateBoard() {
       return
     }
     if (box === 1) {
-      tilesEl[index].innerHTML = '<img id="vi" src="../Images/arcane-vi.png">'
+      tilesEl[index].innerHTML = '<img id="vi" src="../Images/Vi.png">'
       tilesEl[index].classList.add('fall')
       return
     }
@@ -52,7 +52,7 @@ function updateBoard() {
 
 function updateMessage() {
   if (!winner && !tie) {
-  messageEl.innerHTML = `It's ${turn === 1 ? '<img id="vi" src="../Images/arcane-vi.png">' : '<img id="jinx" src="../Images/Jinx.png">'}'s turn!`
+  messageEl.innerHTML = `It's ${turn === 1 ? '<img id="vi" src="../Images/Vi.png">' : '<img id="jinx" src="../Images/Jinx.png">'}'s turn!`
   } else if (!winner && tie) {
     messageEl.textContent = `It's a tie!`
   } else {
