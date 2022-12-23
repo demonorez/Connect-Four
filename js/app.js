@@ -5,7 +5,7 @@ const winningCombos = [[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5,], [3, 4, 5, 6], 
 import * as leagueAudio from './audio.js'
 /*---------------------------- Variables (state) ----------------------------*/
 
-let tie, board, turn, winner, boardShake
+let tie, board, turn, winner
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -52,8 +52,6 @@ function reset() {
   })
   
 }
-
-// init()
 
 function render() {
   updateBoard()

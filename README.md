@@ -3,7 +3,7 @@
 
 # Connect-Four, Arcane edition!
 
-Everyone knows Connect-Four. I chose this game because it would be a fun first project to create and fully stylize. My love for league of legends inspired this. 
+Everyone knows Connect-Four. I chose this game because it would be a fun first project to create and fully stylize. My love for League of Legends inspired this. 
 
 # [Try it here!](https://chimerical-pie-f73be7.netlify.app/) 
 
