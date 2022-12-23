@@ -13,10 +13,25 @@ const tilesEl = document.querySelectorAll('.tile')
 const messageEl = document.querySelector('#message')
 const resetBtnEl = document.querySelector('#reset')
 const boardEl = document.querySelector('#board')
+const startBtnEl = document.querySelector('#start')
+const playBtnEl = document.querySelector('#play')
+const pauseBtnEl = document.querySelector('#pause')
 /*----------------------------- Event Listeners -----------------------------*/
 tilesEl.forEach(tile => tile.addEventListener('click', handleClick))
 resetBtnEl.addEventListener('click', reset)
+startBtnEl.addEventListener('click', init)
+startBtnEl.addEventListener('click', leagueAudio.playWelcome)
+playBtnEl.addEventListener('click', playMusic)
+pauseBtnEl.addEventListener('click', pauseMusic)
 /*-------------------------------- Functions --------------------------------*/
+
+function playMusic() {
+  leagueAudio.playEnemy()
+}
+
+function pauseMusic() {
+  leagueAudio.pauseMusic()
+}
 
 function init() {
   board = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
@@ -24,22 +39,21 @@ function init() {
   winner = false
   tie = false
   render ()
-  if (board === null) {
   }
-}
 
 function reset() {
-  init()
   leagueAudio.playShutdown()
+  init()
   if (board !== null) {
     boardEl.classList.add('shake')
   }
   boardEl.addEventListener("animationend", reset => {
     boardEl.classList.remove('shake')
   })
+  
 }
 
-init()
+// init()
 
 function render() {
   updateBoard()

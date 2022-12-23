@@ -2,6 +2,8 @@
 
 ## I wouldn't have had the inspiration wihtout personal thanks to Riot Games and everyone who created League of Legends and the Arcane Netflix show. 
 
+### Enemy was brought to you by Imagine Dragons. 
+
 You guys are the real heros! 
 
 Below are the links I used to get the images and audio for this game, but again ALL thank should go to riot games as they are the creators of everything you see here. 

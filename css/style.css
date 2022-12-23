@@ -96,6 +96,55 @@ div {
   justify-content: center;
   margin: 60px; 
 }
+#start {
+  position: absolute;
+  bottom: 5em;
+  cursor: pointer;
+  height: 50px;
+  width: 130px;
+  font-size: 40px;
+  border-radius: 10px;
+  border: solid rgb(194, 157, 113);
+  background-color: black;
+  color: rgb(194, 157, 113);
+  display: flex;
+  justify-content: center;
+  margin: 60px; 
+}
+
+#play {
+  position: absolute;
+  bottom: 5em;
+  left: 5em;
+  cursor: pointer;
+  height: 50px;
+  width: 130px;
+  font-size: 40px;
+  border-radius: 10px;
+  border: solid rgb(194, 157, 113);
+  background-color: black;
+  color: rgb(194, 157, 113);
+  display: flex;
+  justify-content: center;
+  margin: 60px; 
+}
+
+#pause {
+  position: absolute;
+  bottom: 2.5em;
+  left: 5em;
+  cursor: pointer;
+  height: 50px;
+  width: 130px;
+  font-size: 40px;
+  border-radius: 10px;
+  border: solid rgb(194, 157, 113);
+  background-color: black;
+  color: rgb(194, 157, 113);
+  display: flex;
+  justify-content: center;
+  margin: 60px; 
+}
 
 #vi {
   height: 110px;
