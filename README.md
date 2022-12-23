@@ -21,8 +21,9 @@ For those of you unfamiliar with the rules, you place a piece in the gameboard. 
 # Icebox 
  - [X] Adds shaking animation when the board is reset 
 -  [ ] Dark/Light mode. 
--  [X] Sound 
+-  [X] Sound.
 +  [ ] Add functionality to let player choose piece color.
--  [X] Victory Music
--  [ ] Computer AI
--  [X] Background music
+-  [X] Victory Music.
+-  [ ] Computer AI.
+-  [X] Background music.
+-  [ ] SUPER MEGA DEATH ROCKET on reset with board shake.
