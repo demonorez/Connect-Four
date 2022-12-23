@@ -71,7 +71,7 @@ function updateMessage() {
   } else if (!winner && tie) {
     messageEl.textContent = `It's a tie!`
   } else {
-    messageEl.innerHTML = `${turn === -1 ? '<img id="vi" src="../Images/Vi.png">' : '<img id="jinx" src="../Images/Jinx.png">'} wins!!`
+    messageEl.innerHTML = `${turn === -1 ? '<img id="jinx" src="../Images/Jinx.png">' : '<img id="vi" src="../Images/Vi.png">'} wins!!`
   }
 }
 
