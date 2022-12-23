@@ -1,9 +1,9 @@
-*Please insert screenshot here*
+<img src="./Images/Screenshot.png">
 
 
-# Connect-Four!
+# Connect-Four, Arcane edition!
 
-Everyone knows Connect-Four. It's a fun, simple game, much like Tic-Tac-Toe! I chose this game because it would be a fun first project to create and fully stylize. 
+Everyone knows Connect-Four. I chose this game because it would be a fun first project to create and fully stylize. My love for league of legends inspired this. 
 
 # [Try it here!](https://chimerical-pie-f73be7.netlify.app/) 
 
@@ -14,10 +14,15 @@ For those of you unfamiliar with the rules, you place a piece in the gameboard. 
 - JavaScript
 - CSS
 - HTML
+- git
+
+# [Attributions and thanks](./Assets.md)
 
 # Icebox 
-+ Adds animation when the board is reset, like chips falling from the bottom. 
-+ Dark/Light mode. 
-+ Sound 
-+ Add functionality to let player choose piece color.
-+ Victory Music
+ - [X] Adds shaking animation when the board is reset 
+-  [ ] Dark/Light mode. 
+-  [X] Sound 
++  [ ] Add functionality to let player choose piece color.
+-  [X] Victory Music
+-  [ ] Computer AI
+-  [ ] Background music
