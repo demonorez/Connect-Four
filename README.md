@@ -25,4 +25,4 @@ For those of you unfamiliar with the rules, you place a piece in the gameboard. 
 +  [ ] Add functionality to let player choose piece color.
 -  [X] Victory Music
 -  [ ] Computer AI
--  [ ] Background music
+-  [X] Background music
